@@ -10,7 +10,6 @@ body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #0a192f;
-
 }
 
 
@@ -29,6 +28,61 @@ body{
     border-radius: 15px;
 }
 
+
+/*Background figures*/
+
+.background-figure-triangle{
+    padding-top: 180px;
+
+    width: 100%;
+
+
+    display: flex;
+
+    gap: 60px;
+}
+.background-triangle{
+    width: 0;
+    height: 0;
+
+    border: 50px solid transparent;
+    border-top: 0;
+    border-bottom: 100px solid rgb(100, 255, 218,0.3);
+    
+}
+
+.background-triangle:hover{
+    border-bottom: 110px solid rgb(100, 255, 218);
+    transition: 2s;
+}
+
+.uno{
+    transform: rotate(45deg);
+}
+
+.dos{
+    transform: rotate(-57deg);
+}   
+
+.tres{
+    transform: rotate(-3deg);
+}
+.cuatro{
+    transform: rotate(26deg);
+}
+.cinco{
+    transform: rotate(18deg);
+}
+.seis{
+    transform: rotate(21deg);
+}
+.siete{
+    transform: rotate(-54deg);
+}
+.ocho{
+    transform: rotate(-50deg);
+}
+/*---------------------------------*/
 
 /* GENERAL GRID FOR ALL APGE */
 
@@ -132,8 +186,6 @@ section{
     width: 95%;
     min-height: 100vh;
     padding: 0;
-
-    ;
 }
 
 
@@ -270,6 +322,39 @@ section{
     border: 2px;
 
     background-color: #64ffda;
+}
+/* What I do knowledge cube */
+.kwnoledge-cube-h1{
+    text-align: center;
+    color: #ccd6f6;
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+
+.side {
+    height: 295px;
+    width: 295px;
+    
+    position: relative;
+    text-align: center;
+  }
+  .top {
+    background: #C9F6FF;
+    transform: rotate(-45deg) skew(15deg, 15deg) ;
+  }
+  .left {
+    background: #8BC5C8;
+    transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 3%);
+  }
+  .right {
+    background: #349FA6;
+    transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, -94%);
+  }
+
+.side h2{
+    padding: 40px;
+
 }
 
 
@@ -601,35 +686,39 @@ section{
     .myself-about{
         display: block;
 
-        z-index: 2;
-    
         width: 250px;
         height: 450px;
         padding-top: 50%;
     
+        z-index: 1;
+
         border-radius: 20px 0px 20px 0px;
     }
     
     .square-1-about{
         display:inline-block;
         position: relative;
-        bottom:625px;
-        left: 95px;
+
+        transform: translate(110px,-640px);
+
         z-index: -1;
-    
+
         height: 150px;
         width: 180px;
     
         background-color: hsl(226, 70%, 88%, 0.5) 
     }
+
+
     .square-2-about{
         display: inline-block;
+
         position: relative;
-        bottom:130px;
-        left: -20px;
-    
+
+        transform: translate(-40px,-110px);
+
         z-index: -1;
-    
+
         height: 150px;
         width: 180px;
     
