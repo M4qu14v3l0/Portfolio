@@ -16,7 +16,7 @@ body{
 /* Scroll configuration */
 
 ::-webkit-scrollbar{
-    width: 6px;
+    width: 4px;
 }
 
 ::-webkit-scrollbar-track{
@@ -29,59 +29,7 @@ body{
 }
 
 
-/*Background figures*/
 
-.background-figure-triangle{
-    padding-top: 180px;
-
-    width: 100%;
-
-
-    display: flex;
-
-    gap: 60px;
-}
-.background-triangle{
-    width: 0;
-    height: 0;
-
-    border: 50px solid transparent;
-    border-top: 0;
-    border-bottom: 100px solid rgb(100, 255, 218,0.3);
-    
-}
-
-.background-triangle:hover{
-    border-bottom: 110px solid rgb(100, 255, 218);
-    transition: 2s;
-}
-
-.uno{
-    transform: rotate(45deg);
-}
-
-.dos{
-    transform: rotate(-57deg);
-}   
-
-.tres{
-    transform: rotate(-3deg);
-}
-.cuatro{
-    transform: rotate(26deg);
-}
-.cinco{
-    transform: rotate(18deg);
-}
-.seis{
-    transform: rotate(21deg);
-}
-.siete{
-    transform: rotate(-54deg);
-}
-.ocho{
-    transform: rotate(-50deg);
-}
 /*---------------------------------*/
 
 /* GENERAL GRID FOR ALL APGE */
@@ -103,8 +51,11 @@ body{
 /* header-main grid and others */
 header{
     position: relative;
+    width: 100%;
     top: 0;
     grid-area: header;
+
+    z-index: 100;
 }
 
 
@@ -119,31 +70,44 @@ main{
 
 
 .main-nav{
+    /* display: flex;
+    justify-content: end; */
+    padding: 5px;
+    -webkit-backdrop-filter: blur(8px);
+    background-color:rgb(100, 255, 218,0.15) ;
+    backdrop-filter: blur(3px);
+}
+
+.navbar-toggler{
+    background-color: #64ffda;
     display: flex;
     justify-content: end;
-
-    padding: 5px;
-    
 }
 
-.main-nav ul{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-right: 40px;
+
+.burger-nav{
+    transform: translateX(-2px) translateY(-3px);
+    width: 35px;
+    height: 35px;
 }
 
-.main-nav ul li{
-    list-style: none;
+
+
+
+.main-nav a{
+    /* list-style: none; */
     color: #64ffda;
     cursor: pointer;
+
+    font-size: 20px;
 }
 
-.main-nav ul li a{
-    text-decoration: none;
-    color: #64ffda;
-    font-size: 25px;
+.main-nav a:hover{
+    color: #ccd6f6 ; 
+    transition: 0.7s;
+    transition: ease;
 }
+
 
 /*----------------------------------------------------------------------*/
 
@@ -159,7 +123,9 @@ main{
 
 footer{
     grid-area: footer;
-
+    color:#64ffda;
+    text-align: center;
+    letter-spacing: 2px;
 }
 
 
@@ -167,16 +133,16 @@ footer{
 
 
 /* settings main page */
-section{
+/* section{
     margin: 0px 0px;
     max-width: 100%;
     margin-bottom: 70px;
     box-sizing: border-box;
     
-}
+} */
 
 
-.general{
+.general-wrapper{
 
     display: flex;
     align-items: center;
@@ -186,6 +152,11 @@ section{
     width: 95%;
     min-height: 100vh;
     padding: 0;
+
+    margin: 0px 0px;
+    max-width: 100%;
+    margin-bottom: 70px;
+    box-sizing: border-box;
 }
 
 
@@ -224,7 +195,7 @@ section{
     font-size: 60px;
     line-height: 90px;
 
-    color: #ccd6f6;
+    color: rgb(204, 214, 246);
 }
 .general-text-presentation p{
     font-size: 26px;
@@ -323,45 +294,12 @@ section{
 
     background-color: #64ffda;
 }
-/* What I do knowledge cube */
-.kwnoledge-cube-h1{
-    text-align: center;
-    color: #ccd6f6;
-    font-size: 30px;
-    margin-bottom: 60px;
-}
-
-
-.side {
-    height: 295px;
-    width: 295px;
-    
-    position: relative;
-    text-align: center;
-  }
-  .top {
-    background: #C9F6FF;
-    transform: rotate(-45deg) skew(15deg, 15deg) ;
-  }
-  .left {
-    background: #8BC5C8;
-    transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 3%);
-  }
-  .right {
-    background: #349FA6;
-    transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, -94%);
-  }
-
-.side h2{
-    padding: 40px;
-
-}
-
 
 /* services page */
 
-
-
+.knowledge-cube{
+    display: none;
+}
 
 .containers-services{
     display: flex;
@@ -375,8 +313,8 @@ section{
     border:solid rgb(104, 111, 123) 2px;
     border-radius: 20px;
 
-    width: 150px;
-    height: 300px;
+    width: 260px;
+    /* height: 300px;  */
     margin: 20px;
     padding: 20px;
 
@@ -424,6 +362,7 @@ section{
 /* contact me page */
 
 .container-contact{
+    
     height: 600px;
 }
 
@@ -468,13 +407,12 @@ section{
 
     z-index: 2;
 
-    margin-top: 100px;
+    margin-top: 50px;
 }
-
 
 .input-field{
     padding: 20px;
-    width: 300px;
+    width: 100%;
 
     background: transparent;
     /* background-color: rgb(43, 43, 43); */
@@ -501,8 +439,24 @@ section{
 }
 
 .contact-form textarea{
-    width: 50%;
+    width: 100%;
     height: 140px;
+    resize: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  
+  -webkit-text-fill-color: #64ffda;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 
@@ -514,6 +468,19 @@ section{
     border: 2px;
 
     background-color: #64ffda;
+}
+
+.location-iframe{
+    text-align: center;
+}
+
+.location-iframe iframe{
+
+    
+    border-radius: 10px ;
+    width: 80%;
+    box-shadow: 15px 15px rgb(100, 255, 218, 0.3) ;
+
 }
 
 /* experience page */
@@ -528,7 +495,7 @@ section{
 
 
 .container-cards-experience{
-    margin-top: 160px;
+    margin-top: 70px;
 
     display:flex;
     justify-content: center;
@@ -539,9 +506,12 @@ section{
     background-color: transparent;
     width: 200px;
     margin: 10px;
-    border-radius: 15px;
 
-    border: solid 2px #ccd6f6;
+
+    border:solid rgb(104, 111, 123) 2px;
+    border-radius: 20px;
+
+    box-shadow: 6px 6px rgb(53, 65, 75) ;
 }
 
 .card h2{
@@ -596,31 +566,6 @@ section{
     border: 2px solid ;
 }
 
-
-/* footer */
-
-.footer-container{
-    height: 100px;
-
-    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 , 10;
-
-    
-}
-
-.footer-container{
-    color: #64ffda;
-    gap: 50px;
-    text-align: center;
-}
-
-/* media query */
-
-
 @media(min-width:370px){
     .general-text-presentation h1{
         font-size: 35px;
@@ -640,10 +585,10 @@ section{
         font-size: 40px;
     }
 
-    .card-services{
+    /* .card-services{
         width: 260px;
-        height: 250px;
-    }
+         height: 250px; 
+    }  */
     .card{
         width: 270px; 
     }
@@ -683,13 +628,14 @@ section{
         justify-content: center;
         align-items: center;
     }
+
     .myself-about{
         display: block;
 
         width: 250px;
-        height: 450px;
-        padding-top: 50%;
-    
+        /* height without bootstrap is 450px */
+        margin-top: 60%;
+        
         z-index: 1;
 
         border-radius: 20px 0px 20px 0px;
@@ -747,6 +693,54 @@ section{
         font-size: 20px;
     }
     
+    .cube{
+        display: block;
+    }
+
+    .knowledge-cube{
+        display: block;
+
+        position: relative;
+    
+        z-index: -1;
+    }
+    
+    .knowledge-cube h1{
+        text-align: center;
+        color: #ccd6f6;
+        font-size: 30px;
+        margin-bottom: 100px;
+    }
+    
+    
+    
+    .side {
+        height: 295px;
+        width: 295px;
+    
+    
+        text-align: center;
+      }
+      .top {
+    
+        background: #C9F6FF;
+        transform: rotate(-45deg) skew(15deg, 15deg) ;
+      }
+      .left {
+    
+        background: #8BC5C8;
+        transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 3%);
+      }
+      .right {
+    
+        background: #349FA6;
+        transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, -94%);
+      }
+    
+    .side h2{
+        padding: 40px;
+    
+    }
     
 
 }
@@ -759,7 +753,8 @@ section{
 @media (min-width:1050px){
 
 
-    .general{
+    .general-wrapper{
+        padding-top: 100px;
         width: 1000px
     }
 
@@ -829,11 +824,16 @@ section{
 
         padding: 10px;
 
-        
+        height: 800px;
 
-        height: 500px;
+        transform: translateY(200px);
+    }
 
-        
+    .left-line{
+        background-color: #8892b0;
+        width: 2px;
+        height: 200px;
+        transform:translateY(-40px); 
     }
 
     .left-side-nav a{
@@ -884,9 +884,16 @@ section{
 
         padding: 10px;
 
-        height: 500px;
+        height: 800px;
 
-        
+        transform: translateY(150px);
+    }
+
+    .right-line{
+        background-color: #8892b0;
+        width: 2px;
+        height: 200px;
+        transform:translateY(30px); 
     }
 
     .right-side-nav ul li{
@@ -914,17 +921,86 @@ section{
 
         color:#8892b0 ;
     }
+    /*Background figures*/
+
+.background-figure-triangle{
+    padding-top: 180px;
+
+    width: 100%;
+
+
+    display: flex;
+
+    gap:60px;
+}
+.background-triangle{
+    width: 0;
+    height: 0;
+
+    border: 50px solid transparent;
+    border-top: 0;
+    border-bottom: 100px solid rgb(100, 255, 218,0.3);
+
+    transition: 1.5s;
+}
+
+.t-one{
+    position: relative;
+    top: 86px;
+    transform: rotate(45deg);
+}
+
+.t-two{
+    position: relative;
+    transform: rotate(-57deg);
+    top:10px
+}   
+
+.t-tree{
+    position: relative;
+    transform: rotate(-3deg);
+    top: 100px;
+}
+.t-four{
+    transform: rotate(26deg);
+}
+.t-five{
+    position: relative;
+    transform: rotate(18deg);
+    top: 100px;
+}
+.t-six{
+    transform: rotate(21deg);
+}
+.t-seven{
+    position: relative;
+    transform: rotate(-54deg);
+    top: 70px;
+}
+.t-eight{
+    transform: rotate(-50deg);
+}
+
+
+.background-triangle:hover{
+    transform: rotate(400deg);
+    transition-timing-function: ease-out;
+}
 
 /* -------------------------------- */
-    section{
+    /* section{
         margin: 0px auto;
         max-width: 1200px;
         margin-bottom: 70px;
-    }
+    } */
 
-    .general{
+    .general-wrapper{
         min-height: 85vh;
         width: 1200px;
+
+        margin: 0px auto;
+        max-width: 1200px;
+        margin-bottom: 70px;
     }
  
     .general-text-presentation h1{

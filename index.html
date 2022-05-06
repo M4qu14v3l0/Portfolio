@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- my style sheet -->
     <link rel="stylesheet" href="styles.css">
     <!-- google fonts -->
@@ -22,13 +24,30 @@
         <header>
             <!-- top nav -->
             <nav class="main-nav">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="pages\about.html">About</a></li>
-                    <li><a href="pages\services.html">Services</a></li>
-                    <li><a href="pages\contact.html">Contact</a></li>
-                    <li><a href="pages\experience.html">Experience</a></li>
-                </ul>
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"><img class="burger-nav" src="./icons/burger-nav.png" alt="burger nav"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link" href="pages\about.html">About</a>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link" href="pages\services.html">Services</a>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link " href="pages\contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="pages\experience_page.html">Experience</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </nav>
             </nav>
         </header>
         <!-- left side nav -->
@@ -39,11 +58,13 @@
                 <i class="fa-solid fa-moon"></i>       
             </ul>
             <a href="https://mail.google.com/mail/u/0/#inbox">marcelo.gabriel.llerena@gmail.com </a>
+            <div class="left-line">
+            </div>
         </nav>  
         <!-- main content -->
         <main>
             <!-- Myself general information -->
-            <section class="general">
+            <section class="general-wrapper">
                     <div class="grid-presentation" >
                         <div class="general-text-presentation">
                             <h1>Hi, my name is</h1>
@@ -55,26 +76,26 @@
                         </div>
                     </div>
                     <div class="background-figure-triangle">
-                    <div class="background-triangle uno"></div>
-                    <div class="background-triangle dos"></div>
-                    <div class="background-triangle tres"></div>
-                    <div class="background-triangle cuatro"></div>
-                    <div class="background-triangle cinco"></div>
-                    <div class="background-triangle seis"></div>
-                    <div class="background-triangle siete"></div>
-                    <div class="background-triangle ocho"></div>
+                    <div class="background-triangle t-one"></div>
+                    <div class="background-triangle t-two"></div>
+                    <div class="background-triangle t-tree"></div>
+                    <div class="background-triangle t-four"></div>
+                    <div class="background-triangle t-five"></div>
+                    <div class="background-triangle t-six"></div>
+                    <div class="background-triangle t-seven"></div>
+                    <div class="background-triangle t-eight"></div>
                     </div>
             </section>
             <!-- About me -->
-            <section class="general">
+            <section class="general-wrapper">
                 <div class="grid-presentation-about" >
                     <div class="about-img">
-                        <img src="./pictures/Marcelo.jpg" alt="" class="myself-about">
+                        <img src="./pictures/Marcelo.jpg" alt="Marcelo Llerena" class="myself-about">
                         <div class="square-2-about"></div>
                         <div class="square-1-about"></div>
                     </div>
                     <div class="general-text-about">
-                        <h1>Who I am?</h1>
+                        <h1>Who I am?<span><hr></span></h1>
                         <h2>About me<br></h2>
                         <p>I'm a software developer specialized in front and back end development for web and mobile
                         I'm excited to create apps or websites coding and applying myself style. Currently I'm studying and working on my own projects, but I'll be happy if you wanna work with me.</p>
@@ -86,32 +107,11 @@
                 </div>
             </section>
             <!-- Services -->
-            <section class="general">
-                <div class="knowledge-cube">  
-                    <div class="kwnoledge-cube-h1">
-                    <h1>What I do</h1>
-                    </div>
-                    <div class="side top">
-                        <h2>Back-End <span> <br>development</span></h2>
-                        <p>I'm able to give support to your entire website or app, controlling big data bases or smaller</p>
-                    </div>
-                    <div class="side left">
-                        <h2>Web Development</h2>
-                        <p>I have enough experience 
-                            developing web-sites, attracting your clients and putting everything where it have to be</p>
-                    </div>
-                    <div class="side right">
-                        <h2>Mobile Development</h2>
-                        <p> know each important 
-                            technology to develop your app on IOS or Android device.</p>
-                    </div>
-                  </div>
-            </section>
 
-            <section class="general">
+            <section class="general-wrapper">
                 <div class="services">
                     <div class="h2-services">
-                        <h2>What I do?</h2>
+                        <h2>What I do?<span><hr></span></h2>
                     </div>
                     <div class="containers-services">
                         <div class="card-services">
@@ -147,33 +147,64 @@
                 </div>
             </section>
 
-            <!-- contact me page -->
-            <section class="general">
-                <div class="container-contact">
-                    <!-- <div class="content-bg-form"></div>  changes will apply soon, keep this line commented until there  -->
-                    <div class="content-form">
-                        <div class="contact-text-form">
-                            <h2>Contact me</h2>
-                            <p>I'm very interested in working with you as a freelancer or by contract if you want. <br>
-                            If you want to make me a question, go ahead</p>
-                        </div>
-                        
-                        <div class="contact-form">
-                            <form>
-                                <ul>
-                                    <li><input  class="input-field" type="text" name="firstname" placeholder="Name"></li>
-                                    <li><input  class="input-field" type="text" name="Email" placeholder="Email"></li>
-                                    <textarea class="input-field" rows="4" cols="50"></textarea>
-                                </ul>
-                                
-                            </form>
-                            <button class="contact-button">Send message</button>
-                        </div>   
+            <section class="general-wrapper">
+
+                <div class="knowledge-cube">  
+                    <div class=".knowledge-cube-h1">
+                    <h1>What I do<span><hr></span></h1>
+                    </div>
+                    <div class="side top">
+                        <h2>Back-End <span> <br>development</span></h2>
+                        <p>I'm able to give support to your entire website or app, controlling big data bases or smaller</p>
+                    </div>
+                    <div class="side left">
+                        <h2>Web Development </h2>
+                        <p>I have enough experience 
+                            developing web-sites, attracting your clients and putting everything where it have to be</p>
+                    </div>
+                    <div class="side right">
+                        <h2>Mobile Development</h2>
+                        <p> know each important 
+                            technology to develop your app on IOS or Android device.</p>
                     </div>
                 </div>
             </section>
+
+            <!-- contact me page -->
+            <section class="general-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="contact-text-form">
+                                    <h2>Contact me</h2>
+                                    <p>I'm very interested in working with you as a freelancer or by contract if you want.
+                                    Do you have questions?, go ahead</p>
+                                    <div class="contact-form">
+                                        <form>
+                                            <ul>
+                                                <li><input  class="input-field" type="text" name="firstname" placeholder="Name"></li>
+                                                <li><input  class="input-field" type="text" name="Email" placeholder="Email"></li>
+                                                <textarea class="input-field" rows="4" cols="50"></textarea>
+                                            </ul>
+                                            
+                                        </form>
+                                        <button class="contact-button">Send message</button>
+                                        
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="location-iframe">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.86032103328!2d-71.51215102831111!3d-16.43191884056275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424b3b3e08b441%3A0x82ad8dff465983f9!2sResidencial%20Alas%20del%20Sur!5e0!3m2!1ses-419!2spe!4v1651719839479!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+            </section>
             <!-- experience page -->
-            <section class="general">
+            <section class="general-wrapper">
                 <div class="general-experience">
                     <div class="title-experience">
                         <h2>I've working at my institue Tecsup</h2>
@@ -236,24 +267,26 @@
             <!-- Discord server and Linkedin links soon... -->
             <a href="" target="_blank"><i class="fa-brands fa-discord"></i></a> 
             <a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        </nav>
-
-        <!-- footer -->
-        <footer>
-            <div class="footer-container">
-                <div class="first-column">
-                    <p>Desingned & built by Marcelo</p>
-                </div>
-                <div class="second-column">
-                    <p>Marcelo :D</p>
-                </div>
-                <div class="third-column">
-                    <p>Marcelo's Page , all rights reserved</p>
-                </div>
+            <div class="right-line">
             </div>
-        </footer>
-        <!-- third footer's section will be apply soon, wait pls -->
+        </nav>
+        <!-- footer using bootstrap grid -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <p>Desinged & built by Marcelo Llerena</p>
+                    <p>©Copyright 2022</p>
+                  </div>
+                </div>
+              </div>
+          </footer>
 
     </div>
+
+    <!-- Bootstrap javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
