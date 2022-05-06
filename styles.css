@@ -366,25 +366,6 @@ footer{
     height: 600px;
 }
 
-
-/* .content-bg-form{
-    background-image: url("./pictures/me-programming.jpeg");
-    position: relative;
-    background-size: cover;
-
-    object-fit: cover;
-
-    width: 1000px;
-    height: 600px;
-
-    filter: blur(8px);
-
-    border-radius: 10px;
-
-    z-index: -1;
-} */
-
-
 .content-form{
     text-align:left;
 }
