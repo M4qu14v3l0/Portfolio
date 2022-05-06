@@ -1,10 +1,4 @@
 /* general settings */
-
-html{
-    padding:0 ;
-    margin: 0;
-}
-
 body{
     padding: 0;
     margin: 0;
@@ -297,9 +291,7 @@ footer{
 
 /* services page */
 
-.knowledge-cube{
-    display: none;
-}
+
 
 .containers-services{
     display: flex;
@@ -313,7 +305,7 @@ footer{
     border:solid rgb(104, 111, 123) 2px;
     border-radius: 20px;
 
-    width: 260px;
+    width: 200px;
     /* height: 300px;  */
     margin: 20px;
     padding: 20px;
@@ -356,6 +348,56 @@ footer{
 .icon-services{
     width: 70px;
 }
+
+
+.knowledge-cube{
+    display: block;
+
+    position: relative;
+
+    z-index: -1;
+}
+
+.knowledge-cube h1{
+    text-align: center;
+    color: #ccd6f6;
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+ .side h2{
+    font-size: 15px;
+ }
+
+ .side p{
+     font-size: 9px;
+ }
+
+
+.side {
+    height: 120px;
+    width: 120px;
+
+    text-align: center;
+
+    margin-left:50px ;
+  }
+  .top {
+
+    background: #C9F6FF;
+    transform: rotate(-45deg) skew(15deg, 15deg) ;
+  }
+  .left {
+
+    background: #8BC5C8;
+    transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 3%);
+  }
+  .right {
+
+    background: #349FA6;
+    transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, -94%);
+  }
+
+
 
 
 
@@ -451,6 +493,7 @@ select:-webkit-autofill:focus {
 }
 
 .location-iframe{
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -565,16 +608,32 @@ select:-webkit-autofill:focus {
         font-size: 40px;
     }
 
-    /* .card-services{
+    .card-services{
         width: 260px;
-         height: 250px; 
-    }  */
+    } 
+
     .card{
         width: 270px; 
     }
     .card-image-size{
         height: 170px;
     }
+
+    .side {
+        height: 185px;
+        width: 185px;
+        margin-left: 15px;
+      }
+
+      .side h2{
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .side p{
+        font-size: 15px;
+    }
+     
 }
 
 
@@ -673,55 +732,22 @@ select:-webkit-autofill:focus {
         font-size: 20px;
     }
     
-    .cube{
-        display: block;
+    
+    .side h2{
+        font-size: 35px;
+        padding-top: 50px; 
     }
 
-    .knowledge-cube{
-        display: block;
-
-        position: relative;
-    
-        z-index: -1;
+    .side p{
+        font-size: 18px;
     }
-    
-    .knowledge-cube h1{
-        text-align: center;
-        color: #ccd6f6;
-        font-size: 30px;
-        margin-bottom: 100px;
-    }
-    
-    
     
     .side {
         height: 295px;
         width: 295px;
-    
-    
         text-align: center;
+        margin-left: 0;
       }
-      .top {
-    
-        background: #C9F6FF;
-        transform: rotate(-45deg) skew(15deg, 15deg) ;
-      }
-      .left {
-    
-        background: #8BC5C8;
-        transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 3%);
-      }
-      .right {
-    
-        background: #349FA6;
-        transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, -94%);
-      }
-    
-    .side h2{
-        padding: 40px;
-    
-    }
-    
 
 }
 
@@ -735,7 +761,6 @@ select:-webkit-autofill:focus {
 
     .general-wrapper{
         padding-top: 100px;
-        width: 1000px
     }
 
     .grid-presentation{
@@ -804,7 +829,7 @@ select:-webkit-autofill:focus {
 
         padding: 10px;
 
-        height: 800px;
+        height: 700px;
 
         transform: translateY(200px);
     }
@@ -813,7 +838,7 @@ select:-webkit-autofill:focus {
         background-color: #8892b0;
         width: 2px;
         height: 200px;
-        transform:translateY(-40px); 
+        transform:translateY(-10px); 
     }
 
     .left-side-nav a{
@@ -864,7 +889,7 @@ select:-webkit-autofill:focus {
 
         padding: 10px;
 
-        height: 800px;
+        height: 700px;
 
         transform: translateY(150px);
     }
@@ -873,7 +898,7 @@ select:-webkit-autofill:focus {
         background-color: #8892b0;
         width: 2px;
         height: 200px;
-        transform:translateY(30px); 
+        transform:translateY(45px); 
     }
 
     .right-side-nav ul li{
@@ -904,9 +929,9 @@ select:-webkit-autofill:focus {
     /*Background figures*/
 
 .background-figure-triangle{
-    padding-top: 180px;
+    padding-top: 80px;
 
-    width: 100%;
+    max-width: 1200px;
 
 
     display: flex;
@@ -975,11 +1000,11 @@ select:-webkit-autofill:focus {
     } */
 
     .general-wrapper{
-        min-height: 85vh;
-        width: 1200px;
+        min-height: 80vh;
+
 
         margin: 0px auto;
-        max-width: 1200px;
+
         margin-bottom: 70px;
     }
  
