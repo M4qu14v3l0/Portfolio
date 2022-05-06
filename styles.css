@@ -70,13 +70,29 @@ main{
     -webkit-backdrop-filter: blur(8px);
     background-color:rgb(100, 255, 218,0.15) ;
     backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: end;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .navbar-toggler{
     background-color: #64ffda;
-    display: flex;
-    justify-content: end;
 }
+
+.navbar-toggler:focus{
+    box-shadow: none;
+    border: 2px solid rgb(100, 255, 218,0.15);
+}
+
+.navbar-collapse{
+    text-align: center;
+}
+
+
 
 
 .burger-nav{
