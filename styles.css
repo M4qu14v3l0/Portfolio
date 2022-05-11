@@ -459,7 +459,6 @@ footer{
     width: 100%;
 
     background: transparent;
-    /* background-color: rgb(43, 43, 43); */
     background-color: rgb(100, 255, 218 , 0.2);
     color: rgb(100, 255, 218);
 
@@ -470,8 +469,14 @@ footer{
     font-size: 16px;
 
     border:0;
-
 }
+
+.input-field:focus{
+    transition: 0.5s;
+    padding: 25px;
+    outline: none;
+}
+
 
 .contact-form ul{
     list-style: none;
@@ -997,12 +1002,6 @@ select:-webkit-autofill:focus {
 }
 
 /* -------------------------------- */
-    /* section{
-        margin: 0px auto;
-        max-width: 1200px;
-        margin-bottom: 70px;
-    } */
-
     .general-wrapper{
         min-height: 80vh;
 
