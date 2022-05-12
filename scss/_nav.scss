@@ -10,8 +10,6 @@ header{
 
 
 .main-nav{
-    /* display: flex;
-    justify-content: end; */
     padding: 5px;
     -webkit-backdrop-filter: blur(8px);
     background-color:$sky-blue-transparent ;
@@ -45,7 +43,7 @@ header{
 }
 
 .navbar-collapse{
-    text-align: center;
+    justify-content: center;
 }
 
 
