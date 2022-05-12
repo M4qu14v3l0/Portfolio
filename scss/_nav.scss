@@ -1,0 +1,66 @@
+/* header-main grid and others */
+header{
+    position: relative;
+    width: 100%;
+    top: 0;
+    grid-area: header;
+
+    z-index: 100;
+}
+
+
+.main-nav{
+    /* display: flex;
+    justify-content: end; */
+    padding: 5px;
+    -webkit-backdrop-filter: blur(8px);
+    background-color:$sky-blue-transparent ;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: end;
+    a{
+        color: $sky-blue;
+        cursor: pointer;
+    
+        font-size: 20px;
+        &:hover{
+            color: $header-text ; 
+            transition: 0.7s;
+            transition: ease;
+        }
+    }
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.navbar-toggler{
+    background-color: $sky-blue;
+    &:focus{
+        box-shadow: none;
+        border: 2px solid $sky-blue-transparent;
+    }
+}
+
+.navbar-collapse{
+    text-align: center;
+}
+
+
+.burger-nav{
+    transform: translateX(-2px) translateY(-3px);
+    width: 35px;
+    height: 35px;
+}
+
+/*----------------------------------------------------------------------*/
+
+.right-side-nav{
+    display: none;
+}
+
+.left-side-nav{
+    display: none;
+}

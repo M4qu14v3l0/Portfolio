@@ -1,0 +1,483 @@
+/* general settings */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: $dark;
+}
+
+
+/* Scroll configuration */
+
+::-webkit-scrollbar{
+    width: 4px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $scroll-color;
+    border-radius: 15px;
+}
+
+
+
+/*---------------------------------*/
+
+/* GENERAL GRID FOR ALL APGE */
+
+.general-container{
+    display: grid;
+    grid-template-areas: 
+                    "header"
+                     "main"  
+                    "footer" 
+  ;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr;
+}
+
+
+
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+/* footer grid*/
+
+.general-wrapper{
+
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    min-height: 100vh;
+    padding: 0;
+
+    margin: 0px 0px;
+    max-width: 100%;
+    margin-bottom: 70px;
+    box-sizing: border-box;
+}
+
+
+/* presentation configurations */
+
+
+.grid-presentation{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.general-text-presentation{
+
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+
+    grid-template-rows:1fr 1fr;
+
+    text-align: left;
+    h1 , h2 ,p{
+        margin: 0px;
+        padding: 0px;
+    }
+    h1{
+        font-size: 30px;
+        line-height: 90px;
+    
+        color: $sky-blue;
+    }
+    h2{
+        font-size: 60px;
+        line-height: 90px;
+    
+        color: $header-text;
+    }
+    p{
+        font-size: 26px;
+        color: $sub-header;
+    }
+}
+
+
+.presentation-img{
+    text-align: center;
+}
+
+.myself-main{
+    width: 170px;
+    height: 170px;
+
+    padding: 0px 6px  0px 6px;
+
+    border-radius: 50%;
+    border: dotted $sky-blue 5px;
+}
+
+/* About configurations */
+
+.grid-presentation-about{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.general-text-about{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: left;
+
+    padding: 0px 30px;
+    h1 , h2 ,p{
+        margin: 0px;
+        padding: 0px;
+    }
+    h1{
+        font-size: 40px;
+        line-height: 90px;
+    
+        color: $header-text;
+    }
+    h2{
+        font-size: 32px;
+        line-height: 90px;
+        font-weight: normal;
+    
+        color:$sub-header;
+    }
+    p{
+        font-size: 20px;
+
+        color:$sub-header
+    }
+}
+
+
+
+.myself-about{
+    display: none;
+}
+
+.square-1-about{
+    display: none;
+}
+.square-2-about{
+    display: none;
+}
+/* button cv about page */
+
+.about-cv{
+    margin-top: 60px;
+    h3{
+        font-size: 25px;
+        font-weight: normal;
+        text-align: left;
+        color: $sky-blue;
+    }
+}
+
+.about-button{
+    width: 120px;
+    height: 30px;
+
+    border-radius: 30px;
+    border: 2px;
+
+    background-color: $sky-blue;
+}
+
+/* services page */
+
+
+
+.containers-services{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-services{
+    background-color: transparent;
+
+    border:solid rgb(104, 111, 123) 2px;
+    border-radius: 20px;
+
+    width: 200px;
+
+    margin: 20px;
+    padding: 20px;
+
+    box-shadow: 6px 6px rgb(53, 65, 75) ;
+
+    color:white;
+    text-decoration: none;
+    h3{
+        margin-top: 15px;
+        font-weight: normal;
+    }
+    p{
+        margin-top: 30px;
+        font-weight: 150;
+    }
+    h1{
+        line-height: 0%;
+    }
+}
+
+
+
+.header-card{
+    h3 , p{
+        margin: 5px;
+    }
+    
+}
+
+.h2-services{
+    h2{
+        margin-bottom: 80px;
+        text-align: center;
+        color:$header-text;
+        font-weight: normal;
+        font-size: 50px;
+    }
+}
+
+.icon-services{
+    width: 70px;
+}
+
+
+.knowledge-cube{
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    z-index: -1;
+    h1{
+        text-align: center;
+        color: $header-text;
+        font-size: 50px;
+        margin-bottom: 100px;
+    }
+}
+
+ .side{
+    height: 120px;
+    width: 120px;
+
+    text-align: center;
+
+    margin-left:5px ;
+    h2{
+        font-size: 15px;
+    }
+    p{
+        font-size: 9px;
+    }
+ }
+
+
+
+  .top {
+    @include cube(rotate(-45deg) skew(15deg, 15deg));
+  }
+  .left {
+    @include cube(rotate(15deg) skew(15deg, 15deg) translate(-50%,3%));
+  }
+  .right {
+    @include cube(rotate(-15deg) skew(-15deg, -15deg) translate(50%, -94%));
+  }
+
+
+
+
+
+/* contact me page */
+
+.container-contact{
+    height: 600px;
+}
+
+.content-form{
+    text-align:left;
+}
+
+
+.contact-text-form{
+    h2{
+        font-size: 50px;
+        color: $sky-blue;
+    }
+    p{
+        font-size: 15px;
+        color: $sky-blue;
+    }
+    
+}
+
+.contact-form{
+    display: block;
+
+    z-index: 2;
+
+    margin-top: 50px;
+    ul , li , textarea{
+        margin-top: 10px;
+    }
+    ul{
+        list-style: none;
+        padding: 0px;
+    }
+    textarea{
+        width: 100%;
+        height: 140px;
+        resize: none;
+    }
+}
+
+.input-field{
+    padding: 20px;
+    width: 100%;
+
+    background: transparent;
+    background-color: $sky-blue-transparent-form;
+    color: $sky-blue;
+
+    border: solid 3px #ccd6f6;
+
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 16px;
+
+    border:0;
+    &:focus{
+        transition: 0.5s;
+        padding-left: 25px;
+        outline: none;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  
+  -webkit-text-fill-color: skyblue;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+.contact-button{
+    @extend .about-button;
+}
+
+.location-iframe{
+    margin-top: 50px;
+    text-align: center;
+    iframe{
+        border-radius: 10px ;
+        width: 80%;
+        box-shadow: 15px 15px $sky-blue-transparent-form ;  
+    }
+}
+/* experience page */
+
+
+.general-experience{
+    width: 70%;
+    padding-top: 30px;
+}
+
+
+.title-experience{
+    h2{
+        color: $header-text;
+        font-weight: normal;
+        text-align: center;
+        font-size: 50px;
+    }
+    
+}
+
+
+.container-cards-experience{
+    margin-top: 70px;
+
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+.card{
+    background-color: transparent;
+    width: 200px;
+    margin: 10px;
+
+
+    border:solid rgb(104, 111, 123) 2px;
+    border-radius: 20px;
+
+    box-shadow: 6px 6px rgb(53, 65, 75) ;
+    h2{
+        margin-left: 7px;
+        color: white;
+        font-weight: normal;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        color: white;
+        font-weight:95;
+    }
+}
+
+.card-image{
+    background-color:transparent;
+    margin-bottom: 15px;
+    border-radius: 15px 15px 0px 0px;
+    border-bottom: 2px solid #ccd6f6;
+}
+
+.card-image-size{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+}
