@@ -8,10 +8,10 @@
 @media(min-width:370px){
     .general-text-presentation{
         h1{
-            font-size: 35px;
+            font-size: 50px;
         }
-        h2{
-            font-size: 95px; 
+        p{
+            font-size: 25px;
         }
     }
     .myself-main{
@@ -22,14 +22,17 @@
         h1{
             font-size: 50px;
         }
-        h2{
-            font-size: 40px;
-        }
     }
 
     .card-services{
         width: 260px;
     } 
+
+    .h2-services{
+        h2{
+            font-size: 50px;
+        }
+    }
 
     .card{
         width: 270px; 
@@ -133,13 +136,7 @@
     
     .general-text-presentation{
         h1{
-            font-size: 45px;
-        }
-        h2{
-            font-size: 115px;
-            line-height: 90px;
-        
-            color: $header-text;
+            font-size: 80px;
         }
         p{
             font-size: 26px;
@@ -155,6 +152,12 @@
             font-size: 20px;    
         }
         
+    }
+
+    .knowledge-cube{
+        h1{
+            font-size: 50px;
+        }
     }
 
     .side{
@@ -173,6 +176,13 @@
         }
          
     }
+
+    .title-experience{
+        h2{
+            font-size: 50px;
+        }
+    }
+
 }
 
 
@@ -225,7 +235,7 @@
     }
 
     .grid-presentation{
-        grid-template-columns:700px (1000px - 700px); 
+        grid-template-columns:600px (900px - 600px); 
     }
 
     header{
@@ -242,46 +252,45 @@
     
     /*--------- left-side-nav grid and others -----------*/
     .left-side-nav{
-        position: sticky;
-        top: 100px;
+        position: fixed;
+        bottom: 0px;
+        left: 40px;
 
         grid-area: left-side-nav;
 
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: end;
         align-items: center;
 
-        padding: 10px;
-
-        height: 700px;
-
-        transform: translateY(100px + 100px);
         a{
             text-decoration: none;
 
-            color:$sub-header;
+            color:$sky-blue;
     
             writing-mode: vertical-rl;
     
             transform: rotate(-180deg);
+
+            font-size: 15px;
         }
         ul , li{
             list-style: none;
         }
         ul{
             padding: 0;
+            margin-bottom: 35px;
         }
         i{
             display: flex;
             flex-direction: column;
             justify-content: end;
     
-            color: $header-text;
+            color: $sky-blue;
     
             margin-top: 50px;
     
-            font-size: 24px;
+            font-size: 20px;
 
             cursor: pointer;
         }
@@ -289,19 +298,20 @@
 
 
     .left-line{
-        background-color: $sub-header;
-        width: 2px;
-        height: 200px;
-        transform:translateY(-10px); 
+        background-color: $sky-blue;
+        width: 1px;
+        height: 100px; 
+        margin-top: 20px;
     }
 
     /*----------- right-side-nav grid and others -------------*/
 
 
     .right-side-nav{
-        position: sticky;
-        top: 100px;
-        
+        position: fixed;
+        bottom: 0px;
+        left: auto;
+        right: 40px;
         grid-area: right-side-nav;
 
         display: flex;
@@ -309,11 +319,7 @@
         align-items: center;
         justify-content: end;
 
-        padding: 10px;
 
-        height: 700px;
-
-        transform: translateY(150px);
         ul , li{
             list-style: none;
         }
@@ -324,11 +330,11 @@
             display: flex;
             flex-direction: column;
     
-            color: $header-text;
+            color: $sky-blue;
     
             margin-top: 100px - 50px;
     
-            font-size: 20px;
+            font-size: 18px;
         }
         a{
             text-decoration: none;
@@ -338,19 +344,17 @@
     }
 
     .right-line{
-        background-color: $sub-header;
-        width: 2px;
-        height: 200px;
-        transform:translateY(45px); 
+        background-color: $sky-blue;
+        width: 1px;
+        height: 100px;
+        margin-top: 20px ;
+
     }
 
     /*Background figures*/
 
 .background-figure-triangle{
     padding-top: 80px;
-
-    max-width: 1200px;
-
 
     display: flex;
 
@@ -406,14 +410,10 @@
     }
  
     .general-text-presentation{
+        padding-top: 60px;
+
         h1{
-            font-size: 25px;
-        }
-        h2{
             font-size: 100px;
-        }
-        h3{
-            font-size: 20px;
         }
     }
 }

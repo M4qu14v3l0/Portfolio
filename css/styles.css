@@ -104,8 +104,8 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 95%;
-  min-height: 100vh;
+  width: 90%;
+  min-height: 80vh;
   padding: 0;
   margin: 0px 0px;
   max-width: 100%;
@@ -117,35 +117,31 @@ main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 60px; }
+  gap: 40px; }
 
 .general-text-presentation {
   display: grid;
   flex-direction: column;
-  align-items: center;
-  grid-template-rows: 1fr 1fr;
   text-align: left; }
-  .general-text-presentation h1, .general-text-presentation h2, .general-text-presentation p {
+  .general-text-presentation h1, .general-text-presentation p {
     margin: 0px;
     padding: 0px; }
   .general-text-presentation h1 {
-    font-size: 30px;
-    line-height: 90px;
-    color: #64ffda; }
-  .general-text-presentation h2 {
-    font-size: 60px;
-    line-height: 90px;
-    color: #ccd6f6; }
+    color: #ccd6f6;
+    font-size: 50px; }
   .general-text-presentation p {
-    font-size: 26px;
+    font-size: 20px;
     color: #8892b0; }
+  .general-text-presentation .p-home-title {
+    font-size: 18px;
+    color: #64ffda; }
 
 .presentation-img {
   text-align: center; }
 
 .myself-main {
-  width: 170px;
-  height: 170px;
+  width: 150px;
+  height: 150px;
   padding: 0px 6px  0px 6px;
   border-radius: 50%;
   border: dotted #64ffda 5px; }
@@ -166,7 +162,7 @@ main {
     margin: 0px;
     padding: 0px; }
   .general-text-about h1 {
-    font-size: 40px;
+    font-size: 38px;
     line-height: 90px;
     color: #ccd6f6; }
   .general-text-about h2 {
@@ -235,8 +231,7 @@ main {
   margin-bottom: 80px;
   text-align: center;
   color: #ccd6f6;
-  font-weight: normal;
-  font-size: 50px; }
+  font-size: 38px; }
 
 .icon-services {
   width: 70px; }
@@ -251,8 +246,8 @@ main {
   .knowledge-cube h1 {
     text-align: center;
     color: #ccd6f6;
-    font-size: 50px;
-    margin-bottom: 100px; }
+    font-size: 38px;
+    margin-bottom: 80px; }
 
 .side {
   height: 120px;
@@ -274,14 +269,11 @@ main {
   transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, -94%); }
 
 /* contact me page */
-.container-contact {
-  height: 600px; }
-
 .content-form {
   text-align: left; }
 
 .contact-text-form h2 {
-  font-size: 50px;
+  font-size: 38px;
   color: #64ffda; }
 
 .contact-text-form p {
@@ -327,8 +319,8 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  -webkit-text-fill-color: skyblue;
-  transition: background-color 5000s ease-in-out 0s; }
+  -webkit-text-fill-color: #64ffda;
+  transition: background-color 5000s; }
 
 .location-iframe {
   margin-top: 50px;
@@ -340,14 +332,13 @@ select:-webkit-autofill:focus {
 
 /* experience page */
 .general-experience {
-  width: 70%;
+  width: 80%;
   padding-top: 30px; }
 
 .title-experience h2 {
   color: #ccd6f6;
-  font-weight: normal;
   text-align: center;
-  font-size: 50px; }
+  font-size: 38px; }
 
 .container-cards-experience {
   margin-top: 70px;
@@ -358,7 +349,7 @@ select:-webkit-autofill:focus {
 
 .card {
   background-color: transparent;
-  width: 200px;
+  width: 230px;
   margin: 10px;
   border: solid #686f7b 2px;
   border-radius: 20px;
@@ -387,18 +378,18 @@ select:-webkit-autofill:focus {
 
 @media (min-width: 370px) {
   .general-text-presentation h1 {
-    font-size: 35px; }
-  .general-text-presentation h2 {
-    font-size: 95px; }
+    font-size: 50px; }
+  .general-text-presentation p {
+    font-size: 25px; }
   .myself-main {
     width: 250px;
     height: 290px; }
   .general-text-about h1 {
     font-size: 50px; }
-  .general-text-about h2 {
-    font-size: 40px; }
   .card-services {
     width: 260px; }
+  .h2-services h2 {
+    font-size: 50px; }
   .card {
     width: 270px; }
   .card-image-size {
@@ -453,17 +444,15 @@ select:-webkit-autofill:focus {
     width: 180px;
     background-color: rgba(203, 213, 246, 0.5); }
   .general-text-presentation h1 {
-    font-size: 45px; }
-  .general-text-presentation h2 {
-    font-size: 115px;
-    line-height: 90px;
-    color: #ccd6f6; }
+    font-size: 80px; }
   .general-text-presentation p {
     font-size: 26px; }
   .contact-text-form h2 {
     font-size: 60px; }
   .contact-text-form p {
     font-size: 20px; }
+  .knowledge-cube h1 {
+    font-size: 50px; }
   .side {
     height: 295px;
     width: 295px;
@@ -475,7 +464,9 @@ select:-webkit-autofill:focus {
     .side p {
       font-size: 18px;
       padding-left: 30px;
-      padding-right: 30px; } }
+      padding-right: 30px; }
+  .title-experience h2 {
+    font-size: 50px; } }
 
 @media (min-width: 1050px) {
   .general-wrapper {
@@ -501,57 +492,56 @@ select:-webkit-autofill:focus {
     grid-template-rows: 100px 1fr 100px;
     grid-template-columns: 6% 88% 6%; }
   .grid-presentation {
-    grid-template-columns: 700px 300px; }
+    grid-template-columns: 600px 300px; }
   header {
     height: 100px; }
   .main-nav ul, .main-nav li, .main-nav a {
     font-size: 20px; }
   /*--------- left-side-nav grid and others -----------*/
   .left-side-nav {
-    position: sticky;
-    top: 100px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
     grid-area: left-side-nav;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    height: 700px;
-    transform: translateY(200px); }
+    justify-content: end;
+    align-items: center; }
     .left-side-nav a {
       text-decoration: none;
-      color: #8892b0;
+      color: #64ffda;
       writing-mode: vertical-rl;
-      transform: rotate(-180deg); }
+      transform: rotate(-180deg);
+      font-size: 15px; }
     .left-side-nav ul, .left-side-nav li {
       list-style: none; }
     .left-side-nav ul {
-      padding: 0; }
+      padding: 0;
+      margin-bottom: 35px; }
     .left-side-nav i {
       display: flex;
       flex-direction: column;
       justify-content: end;
-      color: #ccd6f6;
+      color: #64ffda;
       margin-top: 50px;
-      font-size: 24px;
+      font-size: 20px;
       cursor: pointer; }
   .left-line {
-    background-color: #8892b0;
-    width: 2px;
-    height: 200px;
-    transform: translateY(-10px); }
+    background-color: #64ffda;
+    width: 1px;
+    height: 100px;
+    margin-top: 20px; }
   /*----------- right-side-nav grid and others -------------*/
   .right-side-nav {
-    position: sticky;
-    top: 100px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 40px;
     grid-area: right-side-nav;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
-    padding: 10px;
-    height: 700px;
-    transform: translateY(150px); }
+    justify-content: end; }
     .right-side-nav ul, .right-side-nav li {
       list-style: none; }
     .right-side-nav ul {
@@ -559,21 +549,20 @@ select:-webkit-autofill:focus {
     .right-side-nav i {
       display: flex;
       flex-direction: column;
-      color: #ccd6f6;
+      color: #64ffda;
       margin-top: 50px;
-      font-size: 20px; }
+      font-size: 18px; }
     .right-side-nav a {
       text-decoration: none;
       color: #8892b0; }
   .right-line {
-    background-color: #8892b0;
-    width: 2px;
-    height: 200px;
-    transform: translateY(45px); }
+    background-color: #64ffda;
+    width: 1px;
+    height: 100px;
+    margin-top: 20px; }
   /*Background figures*/
   .background-figure-triangle {
     padding-top: 80px;
-    max-width: 1200px;
     display: flex;
     gap: 60px; }
   .background-triangle {
@@ -623,9 +612,7 @@ select:-webkit-autofill:focus {
     min-height: 80vh;
     margin: 0px auto;
     margin-bottom: 70px; }
-  .general-text-presentation h1 {
-    font-size: 25px; }
-  .general-text-presentation h2 {
-    font-size: 100px; }
-  .general-text-presentation h3 {
-    font-size: 20px; } }
+  .general-text-presentation {
+    padding-top: 60px; }
+    .general-text-presentation h1 {
+      font-size: 100px; } }
