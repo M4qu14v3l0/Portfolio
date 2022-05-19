@@ -219,7 +219,7 @@ main{
 }
 
 .card-container-1{
-    background-image: url(/pictures/pacman.png);
+    background-image: url(../pictures/pacman.png);
     background-size: cover;
     
 
@@ -252,12 +252,12 @@ main{
 
 .card-container-2{
     @extend .card-container-1;
-    background-image: url(/pictures/idrink.jpg);
+    background-image: url(../pictures/idrink.jpg);
 }
 
 .card-container-3{
     @extend .card-container-1;
-    background-image: url(/pictures/ieat.jpg);
+    background-image: url(../pictures/ieat.jpg);
 }
 
 

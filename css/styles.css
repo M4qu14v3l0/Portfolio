@@ -207,7 +207,7 @@ main {
   gap: 50px; }
 
 .card-container-1, .card-container-2, .card-container-3 {
-  background-image: url(/pictures/pacman.png);
+  background-image: url(../pictures/pacman.png);
   background-size: cover;
   border: solid #686f7b 2px;
   border-radius: 20px;
@@ -226,10 +226,10 @@ main {
     transform: translateY(-30px); }
 
 .card-container-2 {
-  background-image: url(/pictures/idrink.jpg); }
+  background-image: url(../pictures/idrink.jpg); }
 
 .card-container-3 {
-  background-image: url(/pictures/ieat.jpg); }
+  background-image: url(../pictures/ieat.jpg); }
 
 .title-card {
   position: relative;
