@@ -207,7 +207,7 @@ main {
   gap: 50px; }
 
 .card-container-1, .card-container-2, .card-container-3 {
-  background: url(./pictures/pacman.png);
+  background-image: url(/pictures/pacman.png);
   background-size: cover;
   border: solid #686f7b 2px;
   border-radius: 20px;
@@ -224,18 +224,12 @@ main {
     opacity: 1;
     bottom: -50%;
     transform: translateY(-30px); }
-    .card-container-1:hover .content-services p, .card-container-2:hover .content-services p, .card-container-3:hover .content-services p {
-      color: #66ff00; }
 
 .card-container-2 {
-  background-image: url(./pictures/idrink.jpg); }
-  .card-container-2:hover .content-services p {
-    color: yellow; }
+  background-image: url(/pictures/idrink.jpg); }
 
 .card-container-3 {
-  background-image: url(./pictures/ieat.jpg); }
-  .card-container-3:hover .content-services p {
-    color: #fdfdfd; }
+  background-image: url(/pictures/ieat.jpg); }
 
 .title-card {
   position: relative;
@@ -259,7 +253,7 @@ main {
 
 .content-services {
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(10, 25, 47, 0.8);
   opacity: 0;
   transition: 0.5s ease all;
   width: 100%;
@@ -267,6 +261,7 @@ main {
   position: relative;
   top: 30px; }
   .content-services p {
+    color: #64ffda;
     padding-top: 40%; }
 
 .header-card h3, .header-card p {
