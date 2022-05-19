@@ -96,8 +96,6 @@
 
         width: 250px;
         /* height without bootstrap is 450px */
-        margin-top: 60%;
-        
         z-index: 1;
 
         border-radius: 20px 0px 20px 0px;
@@ -107,12 +105,14 @@
         display:inline-block;
         position: relative;
 
-        transform: translate(110px,-640px);
+        transform: translate(65px,-425px);
 
         z-index: -1;
 
         height: 150px;
         width: 180px;
+
+        margin: -50px;
     
         background-color: $square-color
     }
@@ -123,12 +123,14 @@
 
         position: relative;
 
-        transform: translate(-40px,-110px);
+        transform: translate(20px,-75px);
 
         z-index: -1;
 
         height: 150px;
         width: 180px;
+
+        margin: -50px;
     
         background-color: $square-color
     }
@@ -400,6 +402,7 @@
     @include triangle(0px, rotate(-50deg))
 }
 
+
 /* -------------------------------- */
     .general-wrapper{
         min-height: 80vh;
@@ -410,7 +413,7 @@
     }
  
     .general-text-presentation{
-        padding-top: 60px;
+        padding-top: 20px;
 
         h1{
             font-size: 100px;

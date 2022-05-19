@@ -71,7 +71,7 @@ main{
 
     margin: 0px 0px;
     max-width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
     box-sizing: border-box;
 }
 
@@ -127,6 +127,9 @@ main{
 }
 
 /* About configurations */
+
+
+
 
 .grid-presentation-about{
 
@@ -212,35 +215,114 @@ main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 50px;
 }
 
-.card-services{
-    background-color: transparent;
+.card-container-1{
+    background: url(/pictures/pacman.png);
+    background-size: cover;
+    
 
     border:solid rgb(104, 111, 123) 2px;
     border-radius: 20px;
 
-    width: 200px;
 
+    width: 200px;
+    height: 316px;
     margin: 20px;
     padding: 20px;
 
     box-shadow: 6px 6px rgb(53, 65, 75) ;
 
-    color:white;
-    text-decoration: none;
-    h3{
-        margin-top: 15px;
-        font-weight: normal;
-    }
+
+
     p{
-        margin-top: 30px;
+        text-decoration: none;
         font-weight: 150;
+        text-align: center;
     }
-    h1{
-        line-height: 0%;
+
+
+    &:hover .content-services{
+        opacity: 1;
+        bottom: -50%;
+        transform: translateY(-30px);
+        p{
+            color: rgb(102, 255, 0)
+        }
     }
 }
+
+.card-container-2{
+    @extend .card-container-1;
+    background-image: url(/pictures/idrink.jpg);
+
+
+    &:hover .content-services{
+
+        p{
+            color: yellow;
+        }
+    }
+}
+
+.card-container-3{
+    @extend .card-container-1;
+    background-image: url(/pictures/ieat.jpg);
+
+    &:hover .content-services{
+        p{
+            color: rgb(253, 253, 253);
+        }
+
+    }
+}
+
+
+
+.title-card{
+    position: relative;
+    left: 15px;
+    bottom: -10px;
+
+    h2{
+        color: $sky-blue;
+        font-style: oblique;
+    }
+
+}
+
+.left-side-card{
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    float: left;
+    top: 10px;
+    left:0px;
+    gap: 15px;
+    img{
+        width: 40px;
+        z-index: 1;
+    }
+}
+
+.content-services{
+
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: 0.5s ease all;
+    width: 100%;
+    height: 270px;
+    position: relative;
+    top: 30px;
+    p{
+        padding-top: 40%;
+    }
+}
+
+
 
 
 

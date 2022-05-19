@@ -109,7 +109,7 @@ main {
   padding: 0;
   margin: 0px 0px;
   max-width: 100%;
-  margin-bottom: 70px;
+  margin-bottom: 90px;
   box-sizing: border-box; }
 
 /* presentation configurations */
@@ -203,26 +203,71 @@ main {
 .containers-services {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  gap: 50px; }
 
-.card-services {
-  background-color: transparent;
+.card-container-1, .card-container-2, .card-container-3 {
+  background: url(/pictures/pacman.png);
+  background-size: cover;
   border: solid #686f7b 2px;
   border-radius: 20px;
   width: 200px;
+  height: 316px;
   margin: 20px;
   padding: 20px;
-  box-shadow: 6px 6px #35414b;
-  color: white;
-  text-decoration: none; }
-  .card-services h3 {
-    margin-top: 15px;
-    font-weight: normal; }
-  .card-services p {
-    margin-top: 30px;
-    font-weight: 150; }
-  .card-services h1 {
-    line-height: 0%; }
+  box-shadow: 6px 6px #35414b; }
+  .card-container-1 p, .card-container-2 p, .card-container-3 p {
+    text-decoration: none;
+    font-weight: 150;
+    text-align: center; }
+  .card-container-1:hover .content-services, .card-container-2:hover .content-services, .card-container-3:hover .content-services {
+    opacity: 1;
+    bottom: -50%;
+    transform: translateY(-30px); }
+    .card-container-1:hover .content-services p, .card-container-2:hover .content-services p, .card-container-3:hover .content-services p {
+      color: #66ff00; }
+
+.card-container-2 {
+  background-image: url(/pictures/idrink.jpg); }
+  .card-container-2:hover .content-services p {
+    color: yellow; }
+
+.card-container-3 {
+  background-image: url(/pictures/ieat.jpg); }
+  .card-container-3:hover .content-services p {
+    color: #fdfdfd; }
+
+.title-card {
+  position: relative;
+  left: 15px;
+  bottom: -10px; }
+  .title-card h2 {
+    color: #64ffda;
+    font-style: oblique; }
+
+.left-side-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  float: left;
+  top: 10px;
+  left: 0px;
+  gap: 15px; }
+  .left-side-card img {
+    width: 40px;
+    z-index: 1; }
+
+.content-services {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: 0.5s ease all;
+  width: 100%;
+  height: 270px;
+  position: relative;
+  top: 30px; }
+  .content-services p {
+    padding-top: 40%; }
 
 .header-card h3, .header-card p {
   margin: 5px; }
@@ -424,24 +469,25 @@ select:-webkit-autofill:focus {
     display: block;
     width: 250px;
     /* height without bootstrap is 450px */
-    margin-top: 60%;
     z-index: 1;
     border-radius: 20px 0px 20px 0px; }
   .square-1-about {
     display: inline-block;
     position: relative;
-    transform: translate(110px, -640px);
+    transform: translate(65px, -425px);
     z-index: -1;
     height: 150px;
     width: 180px;
+    margin: -50px;
     background-color: rgba(203, 213, 246, 0.5); }
   .square-2-about {
     display: inline-block;
     position: relative;
-    transform: translate(-40px, -110px);
+    transform: translate(20px, -75px);
     z-index: -1;
     height: 150px;
     width: 180px;
+    margin: -50px;
     background-color: rgba(203, 213, 246, 0.5); }
   .general-text-presentation h1 {
     font-size: 80px; }
@@ -613,6 +659,6 @@ select:-webkit-autofill:focus {
     margin: 0px auto;
     margin-bottom: 70px; }
   .general-text-presentation {
-    padding-top: 60px; }
+    padding-top: 20px; }
     .general-text-presentation h1 {
       font-size: 100px; } }
