@@ -219,7 +219,7 @@ main{
 }
 
 .card-container-1{
-    background: url(/pictures/pacman.png);
+    background: url(./pictures/pacman.png);
     background-size: cover;
     
 
@@ -255,7 +255,7 @@ main{
 
 .card-container-2{
     @extend .card-container-1;
-    background-image: url(/pictures/idrink.jpg);
+    background-image: url(./pictures/idrink.jpg);
 
 
     &:hover .content-services{
@@ -268,7 +268,7 @@ main{
 
 .card-container-3{
     @extend .card-container-1;
-    background-image: url(/pictures/ieat.jpg);
+    background-image: url(./pictures/ieat.jpg);
 
     &:hover .content-services{
         p{
