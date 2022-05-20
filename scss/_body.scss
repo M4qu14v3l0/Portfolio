@@ -213,41 +213,32 @@ main{
 
 .containers-services{
     display: flex;
-    justify-content: center;
+    justify-content:center;
+
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 70px;
 }
 
 .card-container-1{
+
     background-image: url(../pictures/pacman.png);
-    background-size: cover;
-    
+    background-size:cover ;
 
-    border:solid rgb(104, 111, 123) 2px;
+
     border-radius: 20px;
-
 
     width: 200px;
     height: 316px;
-    margin: 20px;
-    padding: 20px;
-
-    box-shadow: 6px 6px rgb(53, 65, 75) ;
 
 
-
-    p{
-        text-decoration: none;
-        font-weight: 150;
-        text-align: center;
-    }
-
-
+    overflow: hidden;
+    
     &:hover .content-services{
         opacity: 1;
         bottom: -50%;
-        transform: translateY(-30px);
+        transform: translateY(-100px);
     }
+
 }
 
 .card-container-2{
@@ -264,8 +255,8 @@ main{
 
 .title-card{
     position: relative;
-    left: 15px;
-    bottom: -10px;
+    left: -10px;
+    bottom: 0px;
 
     h2{
         color: $sky-blue;
@@ -278,14 +269,18 @@ main{
 
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
     float: left;
-    top: 10px;
-    left:0px;
+    
+
+    transform: translateX(-20px);
+
     gap: 15px;
+
+    z-index: 3;
+
     img{
         width: 40px;
-        z-index: 1;
     }
 }
 
@@ -295,18 +290,29 @@ main{
     background-color: rgba(10, 25, 47 , 0.8);
     opacity: 0;
     transition: 0.5s ease all;
+
+    // width: 160px ;
     width: 100%;
-    height: 270px;
+    height: 100%;
+    // height: 270px;
+
+
     position: relative;
-    top: 30px;
+    top: 100px;
+
+    z-index: 2;
+
+
     p{
         color: $sky-blue;
-        padding-top: 40%;
+
+        text-decoration: none;
+        font-weight: 150;
+        text-align: center;
+        position: absolute;
+        padding: 35% 30px 0px 30px;
     }
 }
-
-
-
 
 
 .header-card{

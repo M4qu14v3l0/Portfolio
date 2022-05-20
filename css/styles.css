@@ -204,26 +204,19 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px; }
+  gap: 70px; }
 
 .card-container-1, .card-container-2, .card-container-3 {
   background-image: url(../pictures/pacman.png);
   background-size: cover;
-  border: solid #686f7b 2px;
   border-radius: 20px;
   width: 200px;
   height: 316px;
-  margin: 20px;
-  padding: 20px;
-  box-shadow: 6px 6px #35414b; }
-  .card-container-1 p, .card-container-2 p, .card-container-3 p {
-    text-decoration: none;
-    font-weight: 150;
-    text-align: center; }
+  overflow: hidden; }
   .card-container-1:hover .content-services, .card-container-2:hover .content-services, .card-container-3:hover .content-services {
     opacity: 1;
     bottom: -50%;
-    transform: translateY(-30px); }
+    transform: translateY(-100px); }
 
 .card-container-2 {
   background-image: url(../pictures/idrink.jpg); }
@@ -233,8 +226,8 @@ main {
 
 .title-card {
   position: relative;
-  left: 15px;
-  bottom: -10px; }
+  left: -10px;
+  bottom: 0px; }
   .title-card h2 {
     color: #64ffda;
     font-style: oblique; }
@@ -242,14 +235,13 @@ main {
 .left-side-card {
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: absolute;
   float: left;
-  top: 10px;
-  left: 0px;
-  gap: 15px; }
+  transform: translateX(-20px);
+  gap: 15px;
+  z-index: 3; }
   .left-side-card img {
-    width: 40px;
-    z-index: 1; }
+    width: 40px; }
 
 .content-services {
   border-radius: 10px;
@@ -257,12 +249,17 @@ main {
   opacity: 0;
   transition: 0.5s ease all;
   width: 100%;
-  height: 270px;
+  height: 100%;
   position: relative;
-  top: 30px; }
+  top: 100px;
+  z-index: 2; }
   .content-services p {
     color: #64ffda;
-    padding-top: 40%; }
+    text-decoration: none;
+    font-weight: 150;
+    text-align: center;
+    position: absolute;
+    padding: 35% 30px 0px 30px; }
 
 .header-card h3, .header-card p {
   margin: 5px; }
@@ -426,8 +423,11 @@ select:-webkit-autofill:focus {
     height: 290px; }
   .general-text-about h1 {
     font-size: 50px; }
-  .card-services {
-    width: 260px; }
+  .card-container-1, .card-container-2, .card-container-3 {
+    width: 260px;
+    height: 360px; }
+  .content-services p {
+    padding: 50% 30px 0px 30px; }
   .h2-services h2 {
     font-size: 50px; }
   .card {
