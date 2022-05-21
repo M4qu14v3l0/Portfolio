@@ -543,9 +543,9 @@ select:-webkit-autofill:focus {
 
     margin-top: 40px;
 
-    border:solid rgb(104, 111, 123) 2px;
+    border:solid $sky-blue-transparent 2px;
     border-radius: 20px;
-    box-shadow:  6px 6px rgb(53, 65, 75) ;
+    box-shadow:  6px 6px 3px $sky-blue-transparent-form ;
 
     h2{
         padding: 10px 10px 0px 10px;
