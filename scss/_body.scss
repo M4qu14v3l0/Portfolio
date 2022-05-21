@@ -24,6 +24,7 @@ body{
 
 
 
+
 /*---------------------------------*/
 
 /* GENERAL GRID FOR ALL APGE */
@@ -221,7 +222,7 @@ main{
 
 .card-container-1{
 
-    background-image: url(../pictures/pacman.png);
+    background-image: url(../pictures/pac.jpg);
     background-size:cover ;
 
 
@@ -248,7 +249,7 @@ main{
 
 .card-container-3{
     @extend .card-container-1;
-    background-image: url(../pictures/ieat.jpg);
+    background-image: url(../pictures/burger.jpg);
 }
 
 
@@ -541,3 +542,32 @@ select:-webkit-autofill:focus {
     margin-right: auto;
     height: 100px;
 }
+
+
+//loader
+
+#loader-page{
+    background: $dark url(../pictures/pacman.gif) no-repeat center;
+    background-size: 5%;
+    height: 100vh;
+    width: 100%;
+
+    position: fixed;
+    z-index:150;
+}
+
+//Text configuration to appearing after scrolling
+
+//working on it 
+
+// h1 , p , h2 , h3{
+//     opacity: 0;
+//     // position: relative;
+//     // bottom: -40px;
+//     transition: all 0.8s ease-out;
+// }
+
+// .show-text{
+//     opacity: 1;
+//     bottom: 0;
+// }
