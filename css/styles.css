@@ -110,7 +110,13 @@ main {
   margin: 0px 0px;
   max-width: 100%;
   margin-bottom: 90px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.8s ease-out; }
+
+.show-wrappers {
+  opacity: 1;
+  bottom: 0; }
 
 /* presentation configurations */
 .grid-presentation {
@@ -329,22 +335,27 @@ main {
   .contact-form textarea {
     width: 100%;
     height: 140px;
-    resize: none; }
+    resize: none;
+    margin-top: 15px; }
 
 .input-field {
   padding: 20px;
   width: 100%;
   background: transparent;
-  background-color: rgba(100, 255, 218, 0.2);
+  background-color: rgba(100, 255, 218, 0.15);
   color: #64ffda;
   border: solid 3px #ccd6f6;
-  height: 50px;
+  height: 60px;
   box-sizing: border-box;
   font-size: 16px;
-  border: 0; }
+  box-shadow: 3px 3px 3px rgba(100, 255, 218, 0.2), -3px -3px 3px rgba(100, 255, 218, 0.3);
+  font-style: italic;
+  border: 0;
+  margin-top: 5px; }
   .input-field:focus {
     transition: 0.5s;
-    padding-left: 25px;
+    padding-top: 35px;
+    padding-left: 35px;
     outline: none; }
 
 input:-webkit-autofill,
@@ -365,7 +376,7 @@ select:-webkit-autofill:focus {
   .location-iframe iframe {
     border-radius: 10px;
     width: 80%;
-    box-shadow: 15px 15px rgba(100, 255, 218, 0.2); }
+    box-shadow: 3px 15px 15px rgba(100, 255, 218, 0.2); }
 
 /* experience page */
 .general-experience {
@@ -388,24 +399,29 @@ select:-webkit-autofill:focus {
   background-color: transparent;
   width: 230px;
   margin: 10px;
+  border: none; }
+
+.card-text {
+  height: 80%;
+  margin-top: 40px;
   border: solid #686f7b 2px;
   border-radius: 20px;
   box-shadow: 6px 6px #35414b; }
-  .card h2 {
+  .card-text h2 {
+    padding: 10px 10px 0px 10px;
     margin-left: 7px;
-    color: white;
+    color: #ccd6f6;
     font-weight: normal;
-    text-align: center; }
-  .card p {
     text-align: center;
-    color: white;
+    font-style: oblique; }
+  .card-text p {
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    color: #8892b0;
     font-weight: 95; }
 
 .card-image {
-  background-color: transparent;
-  margin-bottom: 15px;
-  border-radius: 15px 15px 0px 0px;
-  border-bottom: 2px solid #ccd6f6; }
+  background-color: transparent; }
 
 .card-image-size {
   display: block;
@@ -415,7 +431,7 @@ select:-webkit-autofill:focus {
 
 #loader-page {
   background: #0a192f url(../pictures/pacman.gif) no-repeat center;
-  background-size: 5%;
+  background-size: 35%;
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -441,7 +457,7 @@ select:-webkit-autofill:focus {
   .card {
     width: 270px; }
   .card-image-size {
-    height: 170px; }
+    height: 150px; }
   .side {
     height: 185px;
     width: 185px;
@@ -451,7 +467,9 @@ select:-webkit-autofill:focus {
       padding: 5px; }
     .side p {
       font-size: 15px;
-      padding: 5px; } }
+      padding: 5px; }
+  #loader-page {
+    background-size: 15%; } }
 
 @media (min-width: 740px) {
   header {
@@ -533,7 +551,9 @@ select:-webkit-autofill:focus {
     grid-template-rows: 1fr 1fr;
     text-align: left;
     padding-left: 50px;
-    height: 490px; } }
+    height: 490px; }
+  #loader-page {
+    background-size: 5%; } }
 
 @media (min-width: 1350px) {
   .general-container {

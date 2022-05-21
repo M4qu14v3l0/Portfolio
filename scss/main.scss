@@ -45,7 +45,7 @@
         width: 270px; 
     }
     .card-image-size{
-        height: 170px;
+        height: 150px;
     }
 
     .side {
@@ -60,7 +60,10 @@
             font-size: 15px;
             padding: 5px;
         }
-      }     
+      }
+    #loader-page{
+    background-size: 15%;
+    }     
 }
 
 
@@ -227,6 +230,9 @@
         padding-left: 50px;
     
         height: 490px;
+    }
+    #loader-page{
+        background-size: 5%;
     }
 }
 

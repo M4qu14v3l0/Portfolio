@@ -74,6 +74,15 @@ main{
     max-width: 100%;
     margin-bottom: 90px;
     box-sizing: border-box;
+
+    opacity: 0;
+    transition: all 0.8s ease-out;
+}
+
+
+.show-wrappers{
+    opacity: 1;
+    bottom: 0;
 }
 
 
@@ -415,6 +424,7 @@ main{
     margin-top: 50px;
     ul , li , textarea{
         margin-top: 10px;
+        
     }
     ul{
         list-style: none;
@@ -424,6 +434,7 @@ main{
         width: 100%;
         height: 140px;
         resize: none;
+        margin-top: 15px;
     }
 }
 
@@ -431,20 +442,30 @@ main{
     padding: 20px;
     width: 100%;
 
+
     background: transparent;
-    background-color: $sky-blue-transparent-form;
+    background-color: $sky-blue-transparent;
     color: $sky-blue;
 
     border: solid 3px #ccd6f6;
 
-    height: 50px;
+    height: 60px;
     box-sizing: border-box;
     font-size: 16px;
 
+    box-shadow:  3px 3px 3px $sky-blue-transparent-form,  -3px -3px 3px $sky-blue-triangle;
+
+    font-style: italic;
+
     border:0;
+
+    margin-top: 5px;
+    
+
     &:focus{
         transition: 0.5s;
-        padding-left: 25px;
+        padding-top: 35px;
+        padding-left: 35px;
         outline: none;
     }
 }
@@ -474,9 +495,10 @@ select:-webkit-autofill:focus {
     iframe{
         border-radius: 10px ;
         width: 80%;
-        box-shadow: 15px 15px $sky-blue-transparent-form ;  
+        box-shadow: 3px 15px 15px $sky-blue-transparent-form ;  
     }
 }
+
 /* experience page */
 
 
@@ -510,33 +532,46 @@ select:-webkit-autofill:focus {
     background-color: transparent;
     width: 230px;
     margin: 10px;
+    border: none;
 
+}
+
+.card-text {
+
+    height: 80%;
+
+    margin-top: 40px;
 
     border:solid rgb(104, 111, 123) 2px;
     border-radius: 20px;
+    box-shadow:  6px 6px rgb(53, 65, 75) ;
 
-    box-shadow: 6px 6px rgb(53, 65, 75) ;
     h2{
+        padding: 10px 10px 0px 10px;
         margin-left: 7px;
-        color: white;
+        color: $header-text;
         font-weight: normal;
         text-align: center;
+
+        font-style: oblique;
     }
     p{
+        padding: 20px 20px 20px 20px;
         text-align: center;
-        color: white;
+        color: $sub-header;
         font-weight:95;
+        
     }
 }
 
 .card-image{
     background-color:transparent;
-    margin-bottom: 15px;
-    border-radius: 15px 15px 0px 0px;
-    border-bottom: 2px solid #ccd6f6;
+
 }
 
 .card-image-size{
+
+
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -548,7 +583,7 @@ select:-webkit-autofill:focus {
 
 #loader-page{
     background: $dark url(../pictures/pacman.gif) no-repeat center;
-    background-size: 5%;
+    background-size: 35%;
     height: 100vh;
     width: 100%;
 
@@ -556,18 +591,3 @@ select:-webkit-autofill:focus {
     z-index:150;
 }
 
-//Text configuration to appearing after scrolling
-
-//working on it 
-
-// h1 , p , h2 , h3{
-//     opacity: 0;
-//     // position: relative;
-//     // bottom: -40px;
-//     transition: all 0.8s ease-out;
-// }
-
-// .show-text{
-//     opacity: 1;
-//     bottom: 0;
-// }

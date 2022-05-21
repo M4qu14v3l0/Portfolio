@@ -1,37 +1,27 @@
-// window.addEventListener('DOMContentLoaded', setup);
-
-//     function setup(){
-//         const options = {
-//             rootMargin: '0px 0px -200px 0px'
-//         }
-
-//         const observer = new IntersectionObserver((entries , observer) => {
-//             entries.forEach(entry => {
-//                 if(entry.isIntersecting){
-//                     entry.target.classList.add('show-text');
-//                     observer.unobserve(entry.target);
-//                 }else{
-//                     return;
-//                 }
-//             })
-
-//         } , options);
 
 
+const sections = document.querySelectorAll('.general-wrapper');
 
-//         const h1 = document.querySelector('h1');
-//         observer.observe(h1);
+const options = {
+    root: null,
+    threshold: 0.2,
+    rootMargin: '50px'
+}
 
+const observer = new IntersectionObserver(function(entries , observer){
+    entries.forEach(entry => {
+        if(!entry.isIntersecting){
+            return;
+        }
+        entry.target.classList.toggle('show-wrappers');
+        observer.unobserve(entry.target);
+    });
 
-//         const h2 = document.querySelector('h2');
-//         observer.observe(h2);
-//         const h3 = document.querySelectorAll('h3');
-//         observer.observe(h3);
-    
-//         const paras = document.querySelectorAll('p');
-//         paras.forEach(p => observer.observe(p));
+},options);
 
-//     }
+sections.forEach(section => {
+    observer.observe(section);
+});
 
 
 
