@@ -106,11 +106,9 @@ main {
   justify-content: center;
   flex-direction: column;
   width: 90%;
-  min-height: 80vh;
+  min-height: 75vh;
   padding: 0;
-  margin: 0px 0px;
   max-width: 100%;
-  margin-bottom: 90px;
   box-sizing: border-box;
   opacity: 0;
   transition: all 0.8s ease-out; }
@@ -286,12 +284,13 @@ main {
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: -1; }
+  z-index: -1;
+  margin-bottom: -160px; }
   .knowledge-cube h1 {
     text-align: center;
     color: #ccd6f6;
     font-size: 38px;
-    margin-bottom: 80px; }
+    margin-bottom: 60px; }
 
 .side {
   height: 120px;
