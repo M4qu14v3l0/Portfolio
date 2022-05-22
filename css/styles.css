@@ -62,7 +62,8 @@ footer {
   grid-area: footer;
   color: #64ffda;
   text-align: center;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  margin-top: 50px; }
 
 /* general settings */
 body {
@@ -571,7 +572,9 @@ select:-webkit-autofill:focus {
     padding-left: 50px;
     height: 490px; }
   #loader-page {
-    background-size: 5%; } }
+    background-size: 5%; }
+  footer {
+    margin-top: 0px; } }
 
 @media (min-width: 1350px) {
   .general-container {
