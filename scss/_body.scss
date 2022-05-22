@@ -41,6 +41,8 @@ body{
   padding: 0;
   grid-template-columns: 100%;
   grid-template-rows: 1fr;
+
+  
 }
 
 
@@ -78,6 +80,9 @@ main{
     transition: all 0.8s ease-out;
 
     margin-bottom: 80px;
+
+    
+
 }
 
 
@@ -95,6 +100,7 @@ main{
     flex-wrap: wrap;
     flex-direction: column;
     gap: 40px;
+    
 }
 
 .general-text-presentation{
@@ -134,7 +140,14 @@ main{
     padding: 0px 6px  0px 6px;
 
     border-radius: 50%;
-    border: dotted $sky-blue 5px;
+    box-shadow: rgba(100, 255, 218, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+    transition: 3s ease-in-out;
+
+    &:hover{
+        transform: rotate(360deg);
+    }
+
 }
 
 /* About configurations */
@@ -188,6 +201,7 @@ main{
 
 .myself-about{
     display: none;
+    
 }
 
 .square-1-about{
@@ -215,6 +229,7 @@ main{
     border-radius: 30px;
     border: 2px;
 
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     background-color: $sky-blue;
 }
 
@@ -241,6 +256,7 @@ main{
     width: 200px;
     height: 316px;
 
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
     overflow: hidden;
     
@@ -291,6 +307,7 @@ main{
     z-index: 3;
 
     img{
+        
         width: 40px;
     }
 }
@@ -456,7 +473,7 @@ main{
     box-sizing: border-box;
     font-size: 16px;
 
-    box-shadow:  3px 3px 3px $sky-blue-transparent-form,  -3px -3px 3px $sky-blue-triangle;
+    box-shadow: rgba(12, 42, 56, 0.3) 0px 19px 38px, rgba(14, 90, 104, 0.22) 0px 15px 12px;
 
     font-style: italic;
 
@@ -498,7 +515,7 @@ select:-webkit-autofill:focus {
     iframe{
         border-radius: 10px ;
         width: 80%;
-        box-shadow: 3px 15px 15px $sky-blue-transparent-form ;  
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     }
 }
 
@@ -531,23 +548,52 @@ select:-webkit-autofill:focus {
     gap: 30px;
 }
 
-.card{
+.card-1{
     background-color: transparent;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    border-radius: 5px;
+
     width: 230px;
     margin: 10px;
     border: none;
 
+    transition: transform .7s ease-in-out;
+
+    &:hover{
+        transform: scale(1.1);
+    }
 }
+
+.card-2{
+    @extend .card-1;
+}
+.card-3{
+    @extend .card-1;
+}
+.card-4{
+    @extend .card-1;
+}
+.card-5{
+    @extend .card-1;
+}
+.card-6{
+    @extend .card-1;
+}
+
+
+
 
 .card-text {
 
     height: 80%;
 
-    margin-top: 40px;
+    margin-top: 10px;
 
-    border:solid $sky-blue-transparent 2px;
-    border-radius: 20px;
-    box-shadow:  6px 6px 3px $sky-blue-transparent-form ;
+    // border:solid $sky-blue-transparent 2px;
+    // border-radius: 20px;
+    // box-shadow:  6px 6px 3px $sky-blue-transparent-form ;
 
     h2{
         padding: 10px 10px 0px 10px;
@@ -569,7 +615,7 @@ select:-webkit-autofill:focus {
 
 .card-image{
     background-color:transparent;
-
+    padding-top: 5px ;
 }
 
 .card-image-size{
