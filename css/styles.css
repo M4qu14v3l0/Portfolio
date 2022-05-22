@@ -495,7 +495,8 @@ select:-webkit-autofill:focus {
     display: grid;
     grid-template-columns: 300px 400px;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-top: 170px; }
   .about-img:hover .myself-about {
     transform: scale(1.05); }
   .myself-about {
