@@ -247,7 +247,7 @@ main{
 
 .card-container-1{
 
-    background-image: url(../pictures/pac.jpg);
+    background-image: url(../pictures//projects/pac.jpg);
     background-size:cover ;
 
 
@@ -270,12 +270,12 @@ main{
 
 .card-container-2{
     @extend .card-container-1;
-    background-image: url(../pictures/idrink.jpg);
+    background-image: url(../pictures//projects/idrink.jpg);
 }
 
 .card-container-3{
     @extend .card-container-1;
-    background-image: url(../pictures/burger.jpg);
+    background-image: url(../pictures//projects/burger.jpg);
 }
 
 
@@ -635,14 +635,15 @@ select:-webkit-autofill:focus {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 100px;
+    height: 70px;
+    width: 50%;
 }
 
 
 //loader
 
 #loader-page{
-    background: $dark url(../pictures/pacman.gif) no-repeat center;
+    background: $dark url(../pictures/button-icons/pacman.gif) no-repeat center;
     background-size: 35%;
     height: 100vh;
     width: 100%;

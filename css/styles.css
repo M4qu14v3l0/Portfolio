@@ -218,7 +218,7 @@ main {
   gap: 70px; }
 
 .card-container-1, .card-container-2, .card-container-3 {
-  background-image: url(../pictures/pac.jpg);
+  background-image: url(../pictures//projects/pac.jpg);
   background-size: cover;
   border-radius: 20px;
   width: 200px;
@@ -231,10 +231,10 @@ main {
     transform: translateY(-100px); }
 
 .card-container-2 {
-  background-image: url(../pictures/idrink.jpg); }
+  background-image: url(../pictures//projects/idrink.jpg); }
 
 .card-container-3 {
-  background-image: url(../pictures/burger.jpg); }
+  background-image: url(../pictures//projects/burger.jpg); }
 
 .title-card {
   position: relative;
@@ -436,10 +436,11 @@ select:-webkit-autofill:focus {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 100px; }
+  height: 70px;
+  width: 50%; }
 
 #loader-page {
-  background: #0a192f url(../pictures/pacman.gif) no-repeat center;
+  background: #0a192f url(../pictures/button-icons/pacman.gif) no-repeat center;
   background-size: 35%;
   height: 100vh;
   width: 100%;
