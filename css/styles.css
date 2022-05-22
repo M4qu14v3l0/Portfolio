@@ -402,7 +402,7 @@ select:-webkit-autofill:focus {
   flex-wrap: wrap;
   gap: 30px; }
 
-.card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
+.card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8, .card-9, .card-10 {
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 5px;
@@ -410,7 +410,7 @@ select:-webkit-autofill:focus {
   margin: 10px;
   border: none;
   transition: transform .7s ease-in-out; }
-  .card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover, .card-5:hover, .card-6:hover {
+  .card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover, .card-5:hover, .card-6:hover, .card-7:hover, .card-8:hover, .card-9:hover, .card-10:hover {
     transform: scale(1.1); }
 
 .card-text {
@@ -464,7 +464,7 @@ select:-webkit-autofill:focus {
     padding: 50% 30px 0px 30px; }
   .h2-services h2 {
     font-size: 50px; }
-  .card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
+  .card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8, .card-9, .card-10 {
     width: 270px; }
   .card-image-size {
     height: 150px; }
