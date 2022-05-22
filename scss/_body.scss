@@ -67,7 +67,7 @@ main{
     justify-content: center;
     flex-direction: column;
     width: 90%;
-    min-height: 75vh;
+    min-height: 85vh;
     padding: 0;
 
     max-width: 100%;
@@ -76,6 +76,8 @@ main{
 
     opacity: 0;
     transition: all 0.8s ease-out;
+
+    margin-bottom: 80px;
 }
 
 

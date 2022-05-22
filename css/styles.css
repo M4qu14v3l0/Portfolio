@@ -106,12 +106,13 @@ main {
   justify-content: center;
   flex-direction: column;
   width: 90%;
-  min-height: 75vh;
+  min-height: 85vh;
   padding: 0;
   max-width: 100%;
   box-sizing: border-box;
   opacity: 0;
-  transition: all 0.8s ease-out; }
+  transition: all 0.8s ease-out;
+  margin-bottom: 80px; }
 
 .show-wrappers {
   opacity: 1;
