@@ -113,7 +113,7 @@ main {
   box-sizing: border-box;
   opacity: 0;
   transition: all 0.8s ease-out;
-  margin-bottom: 80px; }
+  margin-top: 80px; }
 
 .show-wrappers {
   opacity: 1;
@@ -388,6 +388,7 @@ select:-webkit-autofill:focus {
 /* experience page */
 .general-experience {
   width: 80%;
+  height: 100%;
   padding-top: 30px; }
 
 .title-experience h2 {
@@ -396,10 +397,8 @@ select:-webkit-autofill:focus {
   font-size: 38px; }
 
 .container-cards-experience {
+  width: 100%;
   margin-top: 70px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   gap: 30px; }
 
 .card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8, .card-9, .card-10 {
@@ -411,7 +410,7 @@ select:-webkit-autofill:focus {
   border: none;
   transition: transform .7s ease-in-out; }
   .card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover, .card-5:hover, .card-6:hover, .card-7:hover, .card-8:hover, .card-9:hover, .card-10:hover {
-    transform: scale(1.1); }
+    transform: scale(1.04); }
 
 .card-text {
   height: 80%;

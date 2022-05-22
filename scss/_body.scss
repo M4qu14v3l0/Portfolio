@@ -79,7 +79,7 @@ main{
     opacity: 0;
     transition: all 0.8s ease-out;
 
-    margin-bottom: 80px;
+    margin-top: 80px;
 
     
 
@@ -524,6 +524,7 @@ select:-webkit-autofill:focus {
 
 .general-experience{
     width: 80%;
+    height: 100%;
     padding-top: 30px;
 }
 
@@ -537,16 +538,14 @@ select:-webkit-autofill:focus {
     
 }
 
-
+// ---------------- carousel --------------------
 .container-cards-experience{
+    width: 100%;
     margin-top: 70px;
-
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
     gap: 30px;
-}
+    }
+
+
 
 .card-1{
     background-color: transparent;
@@ -556,15 +555,21 @@ select:-webkit-autofill:focus {
     border-radius: 5px;
 
     width: 230px;
+
     margin: 10px;
     border: none;
 
     transition: transform .7s ease-in-out;
 
     &:hover{
-        transform: scale(1.1);
+        transform: scale(1.04);
     }
 }
+
+//---------------------------------------------
+
+
+
 
 .card-2{
     @extend .card-1;
@@ -594,19 +599,12 @@ select:-webkit-autofill:focus {
     @extend .card-1;
 }
 
-
-
-
-
 .card-text {
 
     height: 80%;
 
     margin-top: 10px;
 
-    // border:solid $sky-blue-transparent 2px;
-    // border-radius: 20px;
-    // box-shadow:  6px 6px 3px $sky-blue-transparent-form ;
 
     h2{
         padding: 10px 10px 0px 10px;
