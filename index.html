@@ -85,7 +85,7 @@
                 </i>
                 <i class="fa-solid fa-moon"></i>       
             </ul>
-            <a href="https://mail.google.com/mail/u/0/#inbox">marcelo.gabriel.llerena@gmail.com </a>
+            <a href="mailto:marcelo.gabriel.llerena@gmail.com">marcelo.gabriel.llerena@gmail.com </a>
             <div class="left-line">
             </div>
         </nav>  
@@ -242,14 +242,15 @@
                                     <p>I'm very interested in working with you as a freelancer or by contract if you want.
                                     Do you have questions?, go ahead</p>
                                     <div class="contact-form">
-                                        <form>
+                                        <form action="https://formspree.io/f/myyooegj" method="post" id="form">
                                             <ul>
                                                 <li><input  class="input-field" type="text" name="firstname" placeholder="Name"></li>
-                                                <li><input  class="input-field" type="text" name="Email" placeholder="Email"></li>
-                                                <textarea class="input-field" rows="4" cols="50" placeholder="Send me your message"></textarea>
+                                                <li><input  class="input-field" type="email" name="email" placeholder="example@gmail.com"></li>
+                                                <textarea class="input-field" rows="4" cols="50" name="message" placeholder="Send me your message"></textarea>
                                             </ul>
+                                            <button class="contact-button" type="submit">Send</button>
                                         </form>
-                                        <button class="contact-button">Send</button>
+                                       
                                     </div>   
                                 </div>
                             </div>
@@ -407,6 +408,10 @@
     <!-- carousel -->
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script src="./javascript/glider.js"></script>
+    <!-- form -->
+    <script src="./javascript/form.js"></script>
+    <!-- alert -->
+    <!-- soon -->
 
 
 </body>
