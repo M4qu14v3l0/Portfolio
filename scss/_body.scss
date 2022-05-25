@@ -363,7 +363,7 @@ main{
     width: 70px;
 }
 
-
+// knowledge cube page
 .knowledge-cube{
     display: flex;
 
@@ -526,6 +526,7 @@ select:-webkit-autofill:focus {
     width: 80%;
     height: 100%;
     padding-top: 30px;
+    margin-bottom: 60px;
 }
 
 
@@ -539,13 +540,14 @@ select:-webkit-autofill:focus {
 }
 
 // ---------------- carousel --------------------
+// Experience cards 
 .container-cards-experience{
     width: 100%;
     margin-top: 70px;
     gap: 30px;
     }
 
-
+// Experience cards 
 
 .card-1{
     background-color: transparent;
@@ -570,7 +572,7 @@ select:-webkit-autofill:focus {
 
 
 
-
+// Experience cards 
 .card-2{
     @extend .card-1;
 }
