@@ -55,8 +55,7 @@ body{
 
 main{
     grid-area: main;
-    display: flex !important; //this important was applied to overwrite normalize.css which was adding an extra margin because of 'display: block;' feature
-    flex-direction: column;
+    display: flex; 
     justify-content: center;
     align-items: center;
 }

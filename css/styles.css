@@ -95,8 +95,7 @@ body {
 
 main {
   grid-area: main;
-  display: flex !important;
-  flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center; }
 
