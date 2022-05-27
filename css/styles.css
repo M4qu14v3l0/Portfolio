@@ -209,6 +209,9 @@ main {
   border: 2px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   background-color: #64ffda; }
+  .about-button a, .contact-button a {
+    text-decoration: none;
+    color: black; }
 
 /* services page */
 .containers-services {
@@ -265,6 +268,10 @@ main {
   position: relative;
   top: 100px;
   z-index: 2; }
+  .content-services a {
+    color: #ccd6f6;
+    text-decoration: none;
+    font-style: oblique; }
   .content-services p {
     color: #64ffda;
     text-decoration: none;
@@ -376,6 +383,9 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   -webkit-text-fill-color: #64ffda;
   transition: background-color 5000s; }
+
+.contact-button {
+  color: black; }
 
 .location-iframe {
   margin-top: 50px;
