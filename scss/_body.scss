@@ -283,6 +283,13 @@ main{
     background-image: url(../pictures//projects/burger.jpg);
 }
 
+.card-container-4{
+    @extend .card-container-1;
+    background-image: url(../pictures//projects/Logo-text-bg.jpg);
+    background-position: 50% 50%;
+
+
+}
 
 
 .title-card{
