@@ -240,8 +240,9 @@ main {
   background-image: url(../pictures//projects/burger.jpg); }
 
 .card-container-4 {
-  background-image: url(../pictures//projects/Logo-text-bg.jpg);
-  background-position: 50% 50%; }
+  background-image: url(../pictures//projects/rs.jpg);
+  background-position: 50% 50%;
+  background-size: contain; }
 
 .title-card {
   position: relative;

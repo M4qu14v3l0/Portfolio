@@ -285,8 +285,9 @@ main{
 
 .card-container-4{
     @extend .card-container-1;
-    background-image: url(../pictures//projects/Logo-text-bg.jpg);
+    background-image: url(../pictures//projects/rs.jpg);
     background-position: 50% 50%;
+    background-size:contain;
 
 }
 
