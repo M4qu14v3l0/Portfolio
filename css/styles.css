@@ -526,7 +526,7 @@ select:-webkit-autofill:focus {
   .square-1-about {
     display: inline-block;
     position: relative;
-    transform: translate(65px, -425px);
+    transform: translate(65px, -315px);
     z-index: -1;
     height: 150px;
     width: 180px;
@@ -536,7 +536,7 @@ select:-webkit-autofill:focus {
   .square-2-about {
     display: inline-block;
     position: relative;
-    transform: translate(20px, -75px);
+    transform: translate(20px, -70px);
     z-index: -1;
     height: 150px;
     width: 180px;
