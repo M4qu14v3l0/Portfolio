@@ -1,5 +1,5 @@
 {
-  "name": "first_challenge",
+  "name": "Portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/M4qu14v3l0/Portfolio#readme",
   "devDependencies": {
-    "node-sass": "^7.0.1",
-    "nodemon": "^2.0.16"
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
   }
 }
