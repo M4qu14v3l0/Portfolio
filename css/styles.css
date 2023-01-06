@@ -220,7 +220,7 @@ main {
   flex-wrap: wrap;
   gap: 70px; }
 
-.card-container-1, .card-container-2, .card-container-3, .card-container-5, .card-container-4 {
+.card-container-1, .card-container-2, .card-container-3, .card-container-5, .card-container-6, .card-container-4 {
   background-image: url(../pictures//projects/pac.jpg);
   background-size: cover;
   border-radius: 20px;
@@ -228,7 +228,7 @@ main {
   height: 316px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   overflow: hidden; }
-  .card-container-1:hover .content-services, .card-container-2:hover .content-services, .card-container-3:hover .content-services, .card-container-5:hover .content-services, .card-container-4:hover .content-services {
+  .card-container-1:hover .content-services, .card-container-2:hover .content-services, .card-container-3:hover .content-services, .card-container-5:hover .content-services, .card-container-6:hover .content-services, .card-container-4:hover .content-services {
     opacity: 1;
     bottom: -50%;
     transform: translateY(-100px); }
@@ -241,6 +241,10 @@ main {
 
 .card-container-5 {
   background-image: url(../pictures//projects/apigiphy.jpg);
+  background-position: center; }
+
+.card-container-6 {
+  background-image: url(../pictures//projects/github.jpg);
   background-position: center; }
 
 .card-container-4 {
@@ -477,7 +481,7 @@ select:-webkit-autofill:focus {
     height: 290px; }
   .general-text-about h1 {
     font-size: 50px; }
-  .card-container-1, .card-container-2, .card-container-3, .card-container-5, .card-container-4 {
+  .card-container-1, .card-container-2, .card-container-3, .card-container-5, .card-container-6, .card-container-4 {
     width: 260px;
     height: 360px; }
   .content-services p {
