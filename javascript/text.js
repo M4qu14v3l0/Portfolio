@@ -4,8 +4,8 @@ const sections = document.querySelectorAll('.general-wrapper');
 
 const options = {
     root: null,
-    threshold: 0.3,
-    rootMargin: '50px',
+    threshold: 0.1,
+    rootMargin: '70px',
 }
 
 const observer = new IntersectionObserver(function(entries , observer){
